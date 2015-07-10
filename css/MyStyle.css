@@ -1,0 +1,21 @@
+body {
+  padding-top: 70px;
+}
+/*.navbar-brand {
+    max-height: 40px;
+    max-width: 50%;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0;
+}*/
+.navbar-brand {
+  text-align:center;
+  display: inline-block;
+  float: left;
+}
+.navbar-brand img {
+  max-height: 150%;
+  display: inline-block;
+  float: left;
+  padding-right: 10px;
+}

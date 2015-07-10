@@ -4,8 +4,17 @@
 {% include header.html %}
 
 <body>
-  {{page.content}}
+  {% include navbar.html %}
+  <div class="container">
+    <div class="row">
+        <div class="topcontent col-sm-12">{{ page.content }}</div>
+    </div>
+    <div class="row">
+        <div class="maincontent col-sm-9"></div>
+        <div class="sidebar col-sm-3"></div>
+    </div>
+    {% include footer.html %}
+</div>
 
-{% include footer.html %}
 </body>
 </html>
