@@ -1,0 +1,12 @@
+name: "VGDev"
+description: "Comunidad de Videojuegos de la FCFM"
+
+url: "http://vgdev-beauchef.github.io/"
+
+paginate: 10
+
+markdown: rdiscount
+permalink: pretty
+highlighter: pygments
+
+excerpt_separator: <!--more-->
