@@ -1,6 +1,7 @@
 ---
 title: "Concurso Flash! Vacaciones de Invierno de 2015"
 category: Eventos
+author: Sebastián González
 ---
 
 ¿Podemos desarrollar un juego en 2 semanas? ¿Tenemos 2 semanas para desarrollar?
