@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 {% include header.html %}
 
 <body>
   {% include navbar.html %}
   <div class="container">
-    <div class="row">
+    <div class="row-fluid">
         <div class="topcontent col-sm-11">{{ page.content }}</div>
     </div>
-    <div class="row">
+    <div class="row-fluid">
         <div class="maincontent col-sm-9">
           Aca deberían ir los post recientes.
+
+          {% include postlist.html %}
+
         </div>
         <div class="sidebar col-sm-3">
           Aca deben ir los post ordenados en las categorias:
@@ -21,7 +24,7 @@
         </div>
     </div>
     {% include footer.html %}
-</div>
+  </div>
 
 </body>
 </html>

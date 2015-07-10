@@ -1,0 +1,58 @@
+{% for post in paginator.posts %}
+
+
+  <div class="row-fluid post-header">
+    <div class="post-ribbon col-xs-2">
+      {{ post.category }}
+    </div>
+    <div class="post-title col-xs-10">
+      <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+    </div>
+  </div>
+  <div class="row-fluid post-main">
+    <div class="post-content col-xs-12">
+      {{post.excerpt}}
+    </div>
+  </div>
+  <div class="row-fluid post-footer">
+    <div class="post-tags col-xs-12">
+      tags
+    </div>
+  </div>
+
+
+<!--<div class="row post-head">
+<div class="ribbon red col-xs-1">
+{% assign m = post.date | date: "%-m" %}
+{{ post.date | date: "%-d" }}
+{% case m %}
+{% when '1' %}Enero
+{% when '2' %}Febrero
+{% when '3' %}Marzo
+{% when '4' %}Abril
+{% when '5' %}Mayo
+{% when '6' %}Junio
+{% when '7' %}Julio
+{% when '8' %}Agosto
+{% when '9' %}Septiembre
+{% when '10' %}Octubre
+{% when '11' %}Noviembre
+{% when '12' %}Diciembre
+{% endcase %}
+</div>
+<div class="post-title col-xs-11">
+<a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+</div>
+</div>
+<div class="row post-main">
+<div class="post-excerpt col-lg-offset-1 col-lg-11">
+
+</div>
+</div>
+<div class="row post-tags">
+<div class="col-xs-12">
+
+</div>
+</div>-->
+
+{% endfor %}
