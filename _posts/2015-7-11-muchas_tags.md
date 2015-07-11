@@ -1,8 +1,8 @@
 ---
-title: "Probando posts con categorías"
-category: Categoria intencionalmente larga
+title: "Probando muchas tags"
+category: [categoria1, cat2]
 author: Sebastián González
-tags: [lorem, ipsum, dolor, sit amet]
+tags: [lorem, ipsum, dolor, sit amet,consectetur,adipiscing elit,Praesent,sodales,sapien,nec ,velit,feugiat,sagittis,Donec,ut,leo,suscipit, consectetur,neque,eu]
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales sapien nec velit feugiat sagittis. Donec ut leo suscipit, consectetur neque eu, tincidunt sapien. Proin vel tellus ex. Praesent in bibendum lorem. Cras ornare egestas ex nec mollis. Aliquam sit amet nunc sit amet nisi condimentum tincidunt at id erat. In sollicitudin posuere mauris, mattis laoreet dolor pulvinar a. Phasellus tincidunt fringilla consectetur. Quisque erat elit, maximus eu arcu at, vulputate interdum dolor.
 

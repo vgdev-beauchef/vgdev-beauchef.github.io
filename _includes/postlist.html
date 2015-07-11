@@ -4,7 +4,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <div class="post-ribbon">
-          {{ post.category }}
+          {{ post.categories | first }}
         </div>
         <a href="{{ post.url }}">
           <h4 class="panel-title">{{ post.title }}</h4>
@@ -34,7 +34,11 @@
         {{post.excerpt}}
       </div>
       <div class="panel-footer">
-        tags
+        <ul class="tags">
+          {% for tag in post.tags %}
+          <li><a href="#" class="tag">{{ tag }}</a></li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
   </div>
