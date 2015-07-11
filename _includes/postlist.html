@@ -1,16 +1,16 @@
 {% for post in paginator.posts %}
-
-  <div class="post-body">
-  <div class="row-fluid post-header">
-    <div class="post-ribbon col-xs-2">
-      {{ post.category }}
-    </div>
-    <div class="post-title col-xs-10">
-      <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
-    </div>
-    <div class="row-fluid post-author">
-      <div class="post-author col-xs-12">
-        <p>by {{ post.author }}, {{ post.date | date: "%-d" }} de
+<div class="row-fluid">
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="post-ribbon">
+          {{ post.category }}
+        </div>
+        <a href="{{ post.url }}">
+          <h4 class="panel-title">{{ post.title }}</h4>
+        </a>
+        <p>
+          por {{ post.author }}, {{ post.date | date: "%-d" }} de
           {% assign m = post.date | date: "%-m" %}
           {% case m %}
           {% when '1' %}Enero
@@ -30,18 +30,13 @@
           {{ post.date | date: "%Y" }}
         </p>
       </div>
+      <div class="panel-body">
+        {{post.excerpt}}
+      </div>
+      <div class="panel-footer">
+        tags
+      </div>
     </div>
   </div>
-  <div class="row-fluid post-main">
-    <div class="post-content col-xs-12">
-      {{post.excerpt}}
-    </div>
-  </div>
-  <div class="row-fluid post-footer">
-    <div class="post-tags col-xs-12">
-      tags
-    </div>
-  </div>
-  </div>
-
+</div>
 {% endfor %}
